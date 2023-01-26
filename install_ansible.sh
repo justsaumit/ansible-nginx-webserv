@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo apt-add-repository -y ppa:ansible/ansible || sudo apt-get install python-software-properties && sudo apt-add-repository -y ppa:ansible/ansible 
-sudo apt-get update
-sudo apt-get install -y ansible
+sudo apt update
+sudo apt-get install python3 python3-pip -y
+sudo pip3 install ansible
 ansible --version
